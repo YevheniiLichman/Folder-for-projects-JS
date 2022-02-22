@@ -40,10 +40,11 @@ button {
     padding: 0.85em 0.75em;
     margin: 1rem;
     position: relative;
+    left: 50%;
+transform: translate(-50%, 0);
     z-index: 1;
     overflow: hidden;
     text-align: center;
-    margin-left: 42.5%;
     margin-top: 25px;
 }
 
