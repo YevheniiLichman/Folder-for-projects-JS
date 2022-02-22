@@ -13,7 +13,7 @@ window.onload = function () {
         }
         else {
             if (normal > 30) {
-                result.innerHTML += ' - у вас надлишок ваги'
+                result.innerHTML += ' - у вас ожиріння'
             }
             else{
                 result.innerHTML += ' - вважається надмірною масою тіла'
