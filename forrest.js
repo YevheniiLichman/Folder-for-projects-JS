@@ -7,16 +7,21 @@ window.onload = function () {
         var mass = text1.value;
         var height = text2.value / 100;
         normal = mass / (height * height)
-        result.innerHTML = Math.round(normal)
-        if (normal < 25) {
-            result.innerHTML += ' - у вас нормальна вага'
+        if (!normal) {
+            result.innerHTML += 'Спочатку заповніть відповідні поля.'
         }
         else {
-            if (normal > 30) {
-                result.innerHTML += ' - у вас ожиріння'
+            result.innerHTML = Math.round(normal)
+            if (normal < 25) {
+                result.innerHTML += ' - у вас нормальна вага'
             }
-            else{
-                result.innerHTML += ' - вважається надмірною масою тіла'
+            else {
+                if (normal > 30) {
+                    result.innerHTML += ' - у вас ожиріння'
+                }
+                else {
+                    result.innerHTML += ' - вважається надмірною масою тіла'
+                }
             }
         }
     };
