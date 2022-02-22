@@ -4,6 +4,7 @@ window.onload = function () {
     var text2 = document.getElementById("heightBody");
     var result = document.getElementById("result__item");
     button.onclick = function (event) {
+        result.innerHTML = ''
         var mass = text1.value;
         var height = text2.value / 100;
         normal = mass / (height * height)
